@@ -11,9 +11,9 @@ void main() async {
   final deviceID = const Uuid().v4();
 
   await Supabase.initialize(
-    url: 'https://nznhwuyoynclfhwcjtic.supabase.co',
+    url: '`Your supabase project url',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im56bmh3dXlveW5jbGZod2NqdGljIiwicm9sZSI6ImFub24iLCJpYXQiOjE2OTQ3OTYwNDEsImV4cCI6MjAxMDM3MjA0MX0.V9iwmM_3KZ4stzAPGPK7ocjqvoMSNU4285xey28Igc8',
+        'Your supabase anone key',
   );
 
   runApp(MyApp(deviceID: deviceID));
